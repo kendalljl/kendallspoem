@@ -1,0 +1,121 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+
+}
+
+body, h1, h2, h3 {
+  font-weight: 300;
+  color: black;
+  
+    
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: #5aadbb;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}
+  //.main {
+  //flex: .1;
+  //display: flex;
+  //flex-direction: column;
+//}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+  max-height: 14vh;
+}
+
+.header-title {
+  flex: 1;
+  font-size: 3.1rem;
+  margin: .4rem;
+  text-align: left;
+  color: ghostwhite;
+}
+
+.header-desc {
+  flex: 1;
+  text-align: right;
+  font-size: 1.7rem;
+  margin: 1rem;
+  margin-left: 1rem;
+  color: darkcyan;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .2rem;
+  min-height: 82vh;
+  background: url("/spacebge.jpg") no-repeat center center fixed; 
+  position: relative;
+
+}
+.title-h1 {
+  font-weight: 300;
+  font-size: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 16rem;
+  
+}
+.title-logo {
+  height: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.title-h2 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+
+.footer {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  flex: 1;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: darkcyan;
+  min-height: 2.5vh;
+}
+
+.btn-wrapper {
+  padding: 20px 0;
+}
+
+img#selected-img{
+  width:130px;
+  height:130px;
+  padding:18px;
+  display:none;
+  margin: 0 auto;
+}
+
+input#file-selector {
+    width:225px;
+}
+
+.newbtn{
+  display: none;
+}
