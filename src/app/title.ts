@@ -44,10 +44,10 @@ function processImg(callback : any) : void {
 }
 function sendEmotionReq(file : any, callback : any) : void {
   $.ajax({
-    url: 'https://api.projectoxford.ai/emotion/v1.0/recognize',
+    url: 'https://faceapiforpoem.cognitiveservices.azure.com/',
     beforeSend: function (emoteHdrs : any) {
       emoteHdrs.setRequestHeader('Content-Type', 'application/octet-stream');
-      emoteHdrs.setRequestHeader('Ocp-Apim-Subscription-Key', 'f601d06265de4683bd55390c682a3916');
+      emoteHdrs.setRequestHeader('Ocp-Apim-Subscription-Key', '5170a5954ab8455dbb31517bcb19ef53');
     },
     type: 'POST',
     data: file,
